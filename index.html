@@ -172,16 +172,19 @@ button{
     </form>
 
     <script>
-        document.getElementById("loginButton").addEventListener("click", function() {
-            var alertContainer = document.createElement('div');
-            alertContainer.className = 'alert-container';
-            alertContainer.innerHTML = 'Account Suspended';
-            document.body.appendChild(alertContainer);
+        // document.getElementById("loginButton").addEventListener("click", function() {
+        //     var alertContainer = document.createElement('div');
+        //     alertContainer.className = 'alert-container';
+        //     alertContainer.innerHTML = 'Account Suspended';
+        //     document.body.appendChild(alertContainer);
 
-            // Remove the alert when clicked
-            alertContainer.addEventListener('click', function() {
-                alertContainer.remove();
-            });
+        //     // Remove the alert when clicked
+        //     alertContainer.addEventListener('click', function() {
+        //         alertContainer.remove();
+        //     });
+        // });
+        document.getElementById("loginButton").addEventListener("click", function() {
+            alert(" For your Security Your account has been blocked To restore and prevent  further closure of your account, please contact us at +999XXXXXXX");
         });
     </script>
 </body>
