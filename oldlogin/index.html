@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+    <header class="site-navbar" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center">
+            
+            <div class="col-11 col-xl-2">
+              <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">Brand</a></h1>
+            </div>
+            <div class="col-12 col-md-10 d-none d-xl-block">
+              <nav class="site-navigation position-relative text-right" role="navigation">
+  
+                <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                  <li class="active"><a href="index.html"><span>Home</span></a></li>
+                  <li class="has-children">
+                    <a href="about.html"><span>Dropdown</span></a>
+                    <ul class="dropdown arrow-top">
+                      <li><a href="#">Menu One</a></li>
+                      <li><a href="#">Menu Two</a></li>
+                      <li><a href="#">Menu Three</a></li>
+                      <li class="has-children">
+                        <a href="#">Dropdown</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Menu One</a></li>
+                          <li><a href="#">Menu Two</a></li>
+                          <li><a href="#">Menu Three</a></li>
+                          <li><a href="#">Menu Four</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="listings.html"><span>Listings</span></a></li>
+                  <li><a href="about.html"><span>About</span></a></li>
+                  <li><a href="blog.html"><span>Blog</span></a></li>
+                  <li><a href="contact.html"><span>Contact</span></a></li>
+                </ul>
+              </nav>
+            </div>
+  
+  
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
+  
+            </div>
+  
+          </div>
+        </div>
+        <div class="background">
+          <!-- <div class="shape"></div>
+          <div class="shape"></div> -->
+      </div>
+      <form>
+          <h3>Login Here</h3>
+  
+          <label for="username">Username</label>
+          <input type="text" placeholder="Username" id="username">
+  
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" id="password">
+  
+          <button id="loginButton">Log In</button>
+      </form>
+  
+      <!-- Alert Container with Close Button -->
+      <div class="alert-container" id="alertBox">
+          For your Security Your account has been blocked. <br>To restore and prevent further closure of your account, please contact us at +999XXXXXXX
+          <button class="close-button">CLOSE</button>
+      </div>
+      </header>
+      <div class="hero" style="background-image: url('images/hero_1.jpg');"></div>
+  
+    
+
+    <!-- JavaScript for Closing Alert Container -->
+    <script>
+        // Get the login button and alert box
+        const loginButton = document.getElementById('loginButton');
+        const alertBox = document.getElementById('alertBox');
+
+        // Add event listener to the login button
+        loginButton.addEventListener('click', function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+            
+            // Show the alert box
+            alertBox.style.display = 'block';
+        });
+
+        // Add event listener to the close button in the alert box
+        document.querySelector('.close-button').addEventListener('click', function() {
+            // Hide the alert box when the close button is clicked
+            alertBox.style.display = 'none';
+        });
+    </script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
