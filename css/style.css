@@ -184,33 +184,62 @@
 	}
 	
 	form {
-		height: -80px;
-		width: 200px;
-		background-color: rgba(255, 255, 255, 0.13);
-		position: relative;
-		transform: translate(-50%, -50%);
-		top: 800%;
+		position: absolute;
+		margin-top: 5px;
+		margin-bottom: 50px;
+		top: 50%;
 		left: 80%;
+		transform: translate(-50%, -50%);
+		width: 200px; /* Adjust width as needed */
+		background-color: rgb(255, 255, 255); /* Adjust background color and opacity */
+		padding: 20px;
 		border-radius: 10px;
 		backdrop-filter: blur(10px);
-		border: 2px solid rgba(255, 255, 255, 0.1);
 		box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
-		padding: 50px 35px;
 	}
+	
 
-	form * {
+	/* form * {
 		font-family: 'Poppins', sans-serif;
 		color: #000000;
 		letter-spacing: 0.5px;
 		outline: none;
 		border: none;
-	}
+	} */
 
 	form h3 {
-		font-size: 32px;
-		font-weight: 500;
-		line-height: 42px;
-		text-align: center;
+		margin-bottom: 20px;
+		font-size: 24px;
+	}
+	form label {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	form input[type="text"],
+	form input[type="password"] {
+		width: calc(100% - 10px);
+		padding: 2px;
+		margin-bottom: 10px;
+		border: 1px solid #000000;
+		border-radius: 5px;
+		color: #080710;
+	}
+
+	form button {
+		width: 100%;
+		padding: 10px;
+		background-color: #cfcfcf;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-top: 10px;
+	}
+
+	form button a {
+		text-decoration: none;
+		color: rgb(0, 0, 0);
 	}
 
 	label {
@@ -490,15 +519,16 @@
 
 /* Banner */
 
-	#banner
-	{
-	}
+#banner {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
 
-	#banner a img
-	{
-		display: block;
-		width: 100%;
-	}
+#banner img {
+    max-width: 100%;
+    height: auto;
+}
 
 /* Copyright */
 
